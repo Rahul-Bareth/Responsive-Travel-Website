@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+.hero {
+  min-height: 100vh;
+  background-image: url(images/hero.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h3 {
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.hero-content h1 {
+  font-size: 54px;
+  max-width: 500px;
+}
+
+.hero-content p {
+  margin-top: 30px;
+  max-width: 330px;
+  line-height: 1.6;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.explore-btn {
+  padding: 10px 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.view-btn {
+  padding: 10px 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.container {
+  padding: 20px 60px;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.logo {
+  font-size: 35px;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none; 
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.book-btn {
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.popular-destination {
+  height: 500px;
+  width: 100% auto;
+  background-color: rgb(243, 236, 236);
+  margin-top: 40px;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.card {
+  height: 300px;
+  width: 250px;
+  border: 1px solid white;
+  position: relative;
+}
+
+.card-content  {
+  position: absolute;
+}
+
+.card-content p {
+
+  
+}
+
+.card img {
+  object-fit: cover;
+}
+
+.bali-image {
+  height: 300px;
+  width: 250px;
+}
