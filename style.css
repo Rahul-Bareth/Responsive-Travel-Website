@@ -52,13 +52,24 @@ body {
   gap: 10px;
 }
 
+
+
 .explore-btn {
   padding: 10px 15px;
   font-weight: 600;
   border-radius: 10px;
   border: none;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
+
+.explore-btn:hover {
+  background: rgb(211, 187, 80);
+  transition: 0.2s ease-in-out;
+  opacity: 1.2;
+  color: white;
+}
+
 
 .view-btn {
   padding: 10px 15px;
@@ -66,11 +77,20 @@ body {
   border-radius: 10px;
   border: none;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
+.view-btn:hover {
+  background: rgb(211, 187, 80);
+  transition: 0.2s ease-in-out;
+  opacity: 1.2;
+  color: white;
+}
 
 .container {
-  padding: 20px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   height: 90px;
   width: 100%;
   display: flex;
@@ -84,10 +104,15 @@ body {
   color: white;
 }
 
+
 .nav-links {
   display: flex;
   gap: 30px;
   list-style: none; 
+}
+
+.nav-links a:hover {
+  text-decoration: 2px overline solid white;
 }
 
 .nav-links a {
@@ -102,12 +127,22 @@ body {
   border-radius: 8px;
   border: none;
   cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
+.book-btn:hover {
+  background: teal;
+  transition: 0.2s ease-in-out;
+  opacity: 1.2;
+  color: white;
+
+}
+
+/*--Poplular-desitnaiton-section--*/
+
 .popular-destination {
-  height: 500px;
-  width: 100% auto;
-  background-color: rgb(243, 236, 236);
+  height: 440px;
+  width: 100%;
   margin-top: 40px;
   text-align: center;
 }
@@ -116,30 +151,233 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 15px;
 
+}
+
+.divider {
+  border: 2px solid blue;
+  width: 5%;
+  margin: 0 auto;
+ 
 }
 
 .card {
+  margin-top: 30px;
   height: 300px;
   width: 250px;
   border: 1px solid white;
+  box-shadow: 2px 3px 3px rgba(0,0,0,0.2); 
   position: relative;
+  border-radius: 10px;
+  gap: 20px;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
 
 .card-content  {
   position: absolute;
+  bottom: 10px;
+  left: 15px;
+  color: white;
+  z-index: 2;
 }
 
-.card-content p {
-
-  
-}
 
 .card img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
 
-.bali-image {
+.card-image {
   height: 300px;
   width: 250px;
 }
+
+
+/*--Our-Tour-Packages--*/
+
+ .tour-packages {
+  height: 440px;
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+ } 
+
+ .cards-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+ }
+
+ .cards {
+  height: 300px;
+  width: 310px;
+  margin-top: 30px;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px  rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: 0.3s ease;
+ }
+
+ .cards:hover {
+  transform: translateY(8px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+ }
+
+ .cards-content {
+  margin-left: 18px;
+  text-align: start;
+  gap: 9px;
+  line-height: 1.3;
+ }
+
+
+ .title {
+  font-size: 21px;
+  font-weight: 500;
+ }
+
+ .description {
+  color: rgb(83, 81, 81);
+ }
+
+.price {
+  font-size: 18px;
+  font-weight: 600;
+  color:rgb(7, 183, 186);
+  margin-top: 10px;
+}
+
+ .cards img {
+  height: 180px;
+  width: 310px;
+  object-fit: cover;
+  border-radius: 10px;
+ }
+
+ .cards-image{
+  height: 100%;
+  width: 100%;
+ }
+
+ /*--Choose-section--*/
+
+.features {
+  height: auto;
+  background: rgb(250, 238, 215); 
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 20px 60px;
+}
+
+.section-title {
+  text-align: center;
+  width: 100%;
+}
+
+.feature-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1;
+  min-width: 220px;
+  cursor: pointer;
+}
+
+.feature-box i {
+  font-size: 40px;
+  color: #0b2e75;
+}
+
+.feature-text h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.feature-text p {
+  color: #666;
+  line-height: 1.6;
+} 
+
+/*--travel-section--*/
+
+.customer-comment {
+  height: auto;
+  margin-top: 60px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.quote {
+  font-size: 64px;
+  color: rgb(46, 161, 215);
+}
+
+.comment {
+  text-align: center;
+  line-height: 1.8;
+  color: #444;
+}
+
+.section-title {
+  margin-bottom: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.testimonial-wrapper {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   flex-wrap: wrap;
+}
+
+.comment-container {
+  border: 1px solid rgb(233, 176, 176);
+  height: 290px;
+  width:  200px;
+  border-radius: 10px;
+}
+
+.user-profile {
+  margin-left: 8px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+
+.user-profile img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+} 
+
+.user-profile .user-image {
+  height: 35px;
+  width: 35px;
+  object-fit: cover;
+}
+
+.user-profile span {
+  color: #777;
+}
+
