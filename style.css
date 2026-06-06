@@ -226,7 +226,7 @@ body {
   margin-top: 30px;
   border: 1px solid white;
   border-radius: 10px;
-  box-shadow: 3px 3px 3px  rgba(0,0,0,0.3);
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
   cursor: pointer;
   transition: 0.3s ease;
  }
@@ -256,7 +256,7 @@ body {
 .price {
   font-size: 18px;
   font-weight: 600;
-  color:rgb(7, 183, 186);
+  color:rgb(10, 104, 154);
   margin-top: 10px;
 }
 
@@ -275,8 +275,7 @@ body {
  /*--Choose-section--*/
 
 .features {
-  height: auto;
-  background: rgb(250, 238, 215); 
+  height: auto; 
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -324,8 +323,10 @@ body {
 }
 
 .quote {
+  margin-left: 20px;
+  text-align: start;
   font-size: 64px;
-  color: rgb(46, 161, 215);
+  color: rgb(140, 214, 248);
 }
 
 .comment {
@@ -348,7 +349,8 @@ body {
 }
 
 .comment-container {
-  border: 1px solid rgb(233, 176, 176);
+  border: 1px solid white;
+  box-shadow: 0 0 4px 2px rgba(0,0,0,0.2);
   height: 290px;
   width:  200px;
   border-radius: 10px;
@@ -379,5 +381,86 @@ body {
 
 .user-profile span {
   color: #777;
+}
+
+
+/*--next-trip-plan--*/
+
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.contact-form: {
+  width: 500px;
+}
+
+.input-row {
+  display: flex;
+  gap: 20px;
+}
+
+.input-row
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+select,
+textarea {
+  margin-top: 20px;
+}
+
+textarea {
+  height: 170px; 
+  resize: none;
+}
+
+.send-btn {
+  margin-top: 15px;
+  padding: 12px 38px;
+  background: rgb(10, 105, 177);
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3a ease;
+}
+
+.send-btn:hover {
+  opacity: 1.2;
+  transition: 0.3a ease;
+}
+
+
+
+.right-section {
+  position: relative 
+}
+
+
+.traveler-image {
+  height: 420px;
+  width: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 70px;
+  left: 15px;
+  color: white;
+  font-size: 34px;
+  line-height: 1.1;
 }
 
