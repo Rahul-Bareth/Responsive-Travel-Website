@@ -450,6 +450,7 @@ textarea {
 }
 
 .send-btn:hover {
+  background-color: gray;
   opacity: 1.2;
   transition: 0.3s ease;
 }
@@ -550,4 +551,113 @@ textarea {
   font-size: 18px;
   padding: 40px;
 }
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: 65vh;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+  }
+
+  .hero img {
+    height: 60%;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    width: 90%;
+  }
+
+  .button {
+    flex-direction: column;
+  }
+
+  .card-container,
+  .cards-container,
+  .contact-container,
+  .testimonial-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popular-destination,
+  .tour-packages {
+    height: auto;
+  }
+
+  .features {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  
+  .send-btn {
+  display: block;
+  margin: 20px auto 0; 
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+  
+
+  .traveler-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-text{
+    font-size:24px;
+  }
+
+  .divider{
+    width:60px;
+  }
+
+  .comment-container {
+    max-width: 320px;
+    width: 100%;
+    max-width: 320px;
+    min-height: 280px;
+ 
+    display: flex;
+    flex-direction: column;
+   }
+
+    .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+   .footer-column p{
+    width:100%;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  }
+
+ 
+  
+
 
